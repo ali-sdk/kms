@@ -1,0 +1,41 @@
+{
+  "name": "@alicloud/kms",
+  "version": "0.0.0",
+  "description": "kms client for alicloud",
+  "main": "lib/client.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "npm run lint && egg-bin test",
+    "test-local": "egg-bin test",
+    "lint": "eslint lib test",
+    "ci": "npm run lint && egg-bin cov"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ali-sdk/kms.git"
+  },
+  "keywords": [
+    "kms"
+  ],
+  "author": "fengmk2",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ali-sdk/kms/issues"
+  },
+  "homepage": "https://github.com/ali-sdk/kms#readme",
+  "engines": {
+    "node": ">= 8.0.0"
+  },
+  "devDependencies": {
+    "egg-bin": "^4.9.0",
+    "eslint": "^5.7.0",
+    "eslint-config-egg": "^7.1.0"
+  },
+  "dependencies": {
+    "debug": "^4.1.0",
+    "urllib": "^2.30.0",
+    "utility": "^1.15.0"
+  }
+}
